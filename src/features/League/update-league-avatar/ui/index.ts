@@ -1,0 +1,1 @@
+export { default as EditLeagueAvatar } from "./EditLeagueAvatar.vue";

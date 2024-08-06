@@ -1,0 +1,6 @@
+{
+  "deleteLeagueAvatar_delete": "Удалить",
+  "deleteLeagueAvatar_cancel": "Отменить",
+  "deleteLeagueAvatar_areYouSureYouWantToDeleteTheAvatar": "Вы уверены, что хотите удалить аватар?",
+  "deleteLeagueAvatar_itWillBeImpossibleToCancelThisAction": "Отменить данное действие будет невозможно"
+}

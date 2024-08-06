@@ -1,0 +1,47 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "storybook": "storybook dev --port 6006",
+    "build-storybook": "storybook build"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@nuxt/eslint": "^0.3.9",
+    "@nuxt/fonts": "^0.7.0",
+    "@nuxt/image": "^1.7.0",
+    "@nuxt/test-utils": "^3.12.1",
+    "@nuxtjs/i18n": "^8.3.1",
+    "@nuxtjs/tailwindcss": "^6.12.0",
+    "@tailwindcss/forms": "^0.5.7",
+    "@types/lodash": "^4.17.7",
+    "@types/node": "^18.17.5",
+    "@vue/test-utils": "^2.4.5",
+    "happy-dom": "^14.7.1",
+    "nuxt": "^3.12.3",
+    "nuxt-primevue": "^0.3.1",
+    "playwright-core": "^1.43.1",
+    "sass": "^1.75.0",
+    "vite-plugin-eslint2": "^4.4.0",
+    "vitest": "^1.5.2",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.5.1",
+    "@sentry/vue": "^7.74.1",
+    "dayjs": "^1.11.11",
+    "jose": "^5.3.0",
+    "lodash": "^4.17.21",
+    "pinia": "^2.1.7",
+    "primeicons": "^7.0.0",
+    "primevue": "^3.52.0",
+    "zod": "^3.23.8"
+  }
+}

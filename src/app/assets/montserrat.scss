@@ -1,0 +1,44 @@
+@mixin use-font($font_name, $file_path_without_ext, $weight: normal, $style: normal) {
+	@font-face {
+		font-family: quote($font_name);
+		src: url($file_path_without_ext + '.woff') format('woff'),
+		url($file_path_without_ext + '.woff2') format('woff2'),
+		url($file_path_without_ext + '.ttf')  format('truetype');
+		font-weight: $weight;
+		font-style: $style;
+		font-display: swap;
+	}
+}
+
+$montserrat-path: 'app/assets/fonts/Montserrat/';
+
+$black-path: 	        $montserrat-path + 'Black/Montserrat-Black';
+$black-italic-path: 	$montserrat-path + 'BlackItalic/Montserrat-BlackItalic';
+$extra-bold-path: 		$montserrat-path + 'ExtraBold/Montserrat-ExtraBold';
+$extra-bold-italic-path:$montserrat-path + 'ExtraBoldItalic/Montserrat-ExtraBoldItalic';
+$bold-path: 			$montserrat-path + 'SemiBold/Montserrat-SemiBold';
+$bold-italic-path:		$montserrat-path + 'BoldItalic/Montserrat-BoldItalic';
+$semi-bold-path: 		$montserrat-path + 'SemiBold/Montserrat-SemiBold';
+$semi-bold-italic-path: $montserrat-path + 'SemiBoldItalic/Montserrat-SemiBoldItalic';
+$medium-path: 			$montserrat-path + 'Medium/Montserrat-Medium';
+$medium-italic-path: 	$montserrat-path + 'MediumItalic/Montserrat-MediumItalic';
+$regular-path: 			$montserrat-path + 'Regular/Montserrat-Regular';
+$italic-path: 			$montserrat-path + 'Italic/Montserrat-Italic';
+$light-path: 	        $montserrat-path + 'Light/Montserrat-Light';
+$light-italic-path: 	$montserrat-path + 'LightItalic/Montserrat-LightItalic';
+
+
+@include use-font(Montserrat, $black-path, 900, normal);
+@include use-font(Montserrat, $black-italic-path, 900, italic);
+@include use-font(Montserrat, $extra-bold-path, 800, normal);
+@include use-font(Montserrat, $extra-bold-italic-path, 800, italic);
+@include use-font(Montserrat, $bold-path, 700, normal);
+@include use-font(Montserrat, $bold-italic-path, 700, italic);
+@include use-font(Montserrat, $semi-bold-path, 600, normal);
+@include use-font(Montserrat, $semi-bold-italic-path, 600, italic);
+@include use-font(Montserrat, $medium-path, 500, normal);
+@include use-font(Montserrat, $medium-italic-path, 500, italic);
+@include use-font(Montserrat, $italic-path, 400, italic);
+@include use-font(Montserrat, $regular-path, 400, normal);
+@include use-font(Montserrat, $light-path, 300, normal);
+@include use-font(Montserrat, $light-italic-path, 300, italic);

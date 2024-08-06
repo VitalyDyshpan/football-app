@@ -1,0 +1,12 @@
+.vscode
+node_modules
+.gitignore
+README.md
+index.html
+package-lock.json
+stories
+.storybook
+cypress
+cypress.config.ts
+*-backend
+nuxt.config.ts

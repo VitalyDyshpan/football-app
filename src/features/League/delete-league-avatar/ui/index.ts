@@ -1,0 +1,1 @@
+export { default as DeleteLeagueAvatar } from "./DeleteLeagueAvatar.vue";

@@ -1,0 +1,59 @@
+@layer tailwind-base, primevue, tailwind-utilities;
+
+@layer tailwind-base {
+    @tailwind base;
+}
+
+@layer tailwind-utilities {
+    @tailwind components;
+    @tailwind utilities;
+}
+
+/**
+ * Remove focus styles for non-keyboard focus.
+ */
+:focus:not(:focus-visible) {
+  outline: 0;
+  box-shadow: none;
+}
+
+/**
+ * Cross-browser styles for explicit focus via
+ * keyboard-based (eg Tab) navigation or the
+ * .focus-visible utility class.
+ */
+:focus,
+.focus-visible:focus:not(:focus-visible) {
+  outline: 0;
+  box-shadow: none
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    @apply text-text h-full font-medium;
+}
+
+#__nuxt {
+    height: 100%;
+}
+
+.styled-scrollbar {
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #0003;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      background-color: #0000004d;
+    }
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+}

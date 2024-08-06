@@ -1,0 +1,1 @@
+export { default as EditLeague } from "./EditLeague.vue";

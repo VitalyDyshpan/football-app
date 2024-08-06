@@ -1,0 +1,1 @@
+export { default as PersonalLeagues } from "./PersonalLeagues.vue";

@@ -1,0 +1,1 @@
+export { default as CheckCode } from "./CheckCode.vue";

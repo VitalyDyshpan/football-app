@@ -1,0 +1,1 @@
+export { default as GetCode } from "./GetCode.vue";

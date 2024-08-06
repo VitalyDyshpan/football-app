@@ -1,0 +1,1 @@
+export { default as LeagueDetail } from "./LeagueDetail.vue";

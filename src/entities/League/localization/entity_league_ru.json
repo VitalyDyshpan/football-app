@@ -1,0 +1,14 @@
+{
+  "city": "Город",
+  "league_description": "Описание лиги",
+  "league_link": "Ссылка",
+  "league_location": "Местоположение",
+  "league_managersAdditionalPhone": "Доп. телефон",
+  "league_managersPhone": "Телефон руководителя",
+  "league_year": "Год",
+  "manager": "ФИО руководителя",
+  "moreDetail": "Подробнее",
+  "nonpublic": "Неактивная",
+  "phoneNumber": "Номер телефона",
+  "public": "Активная"
+}

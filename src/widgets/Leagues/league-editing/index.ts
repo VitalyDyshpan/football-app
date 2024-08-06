@@ -1,0 +1,1 @@
+export { default as LeagueEditing } from "./LeagueEditing.vue";

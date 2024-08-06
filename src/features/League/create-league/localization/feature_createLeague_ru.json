@@ -1,0 +1,14 @@
+{
+  "createLeague_add": "Добавить",
+  "createLeague_delete": "Удалить",
+  "createLeague_https": "https://",
+  "createLeague_leagueDescription": "Описание лиги",
+  "createLeague_managersName": "ФИО руководителя",
+  "createLeague_titleShort": "Сокращенное наименование",
+  "createLeague_managersPhone": "Телефон руководителя",
+  "createLeague_phoneAdditional": "Доп. телефон",
+  "createLeague_save": "Сохранить",
+  "createLeague_title": "Название",
+  "createLeague_theLocationOfTheOwner": "Место геолокации владельца",
+  "createLeague_enterCorrectURL": "Введите корректный url-адрес"
+}

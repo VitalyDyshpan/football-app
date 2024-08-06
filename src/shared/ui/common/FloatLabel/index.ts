@@ -1,0 +1,1 @@
+export { default as VFloatLabel } from "./VFloatLabel.vue";

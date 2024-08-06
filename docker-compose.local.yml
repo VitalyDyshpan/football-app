@@ -1,0 +1,45 @@
+version: '3.8'
+
+volumes:
+  frontend_vm:
+
+services:
+  frontend:
+    image: node:lts-bookworm-slim
+    hostname: frontend
+    container_name: "${PROJECT}-frontend"
+    restart: unless-stopped
+    working_dir: /workspace
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - ./:/workspace
+      - frontend_vm:/workspace/node_modules
+    ports:
+      - "80:3000"
+    command: /bin/sh -c "npm ci && npm run dev"
+    networks:
+      - appnet
+
+#  storybook:
+#    image: node:lts-bookworm-slim
+#    hostname: storybook
+#    container_name: "${PROJECT}-storybook"
+#    restart: unless-stopped
+#    working_dir: /workspace
+#    volumes:
+#      - /etc/localtime:/etc/localtime:ro
+#      - /etc/timezone:/etc/timezone:ro
+#      - ./:/workspace
+#      - frontend_vm:/workspace/node_modules
+#    ports:
+#      - "6006:6006"
+#    command: /bin/sh -c "npm run storybook"
+#    networks:
+#      - appnet
+
+networks:
+  appnet:
+    name: appnet
+    driver: bridge
+    external: true

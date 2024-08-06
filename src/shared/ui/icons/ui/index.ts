@@ -1,0 +1,10 @@
+export { default as IconCup } from "./IconCup.vue";
+export { default as IconEnvelope } from "./IconEnvelope.vue";
+export { default as IconExit } from "./IconExit.vue";
+export { default as IconEye } from "./IconEye.vue";
+export { default as IconEyeClose } from "./IconEyeClose.vue";
+export { default as IconPencil } from "./IconPencil.vue";
+export { default as IconPhoneCall } from "./IconPhoneCall.vue";
+export { default as IconPlus } from "./IconPlus.vue";
+export { default as IconUser } from "./IconUser.vue";
+export { default as IconGlobe } from "./IconGlobe.vue";
